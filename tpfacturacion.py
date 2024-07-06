@@ -19,7 +19,7 @@ pre1 = int(input("Ingrese el primer precio del producto: "))
 pre2 = int(input("Ingrese el segundo precio: "))
 pre3 = int(input("ingrese el tercer precio: "))
 sum1 = (pre1 + pre2 + pre3)
-pfinal = (((pre1 + pre2 + pre3)*21)/100)
-sum2 = pfinal + sum1 
-print("El precio es de: " , sum1 , "+ el 21% IVA de= " , pfinal)
-print("El precio final es de: " , sum2)
+sum2 = (((pre1 + pre2 + pre3)*21)/100)
+pfinal = sum2 + sum1 
+print("El precio es de: " , sum1 , "+ el 21% IVA de= " , sum2)
+print("El precio total final es de: " , pfinal)
