@@ -1,5 +1,9 @@
-import os
+import os 
 from funciones import *
+
+a = None 
+b = None 
+resultado = None
 
 def menu():
     while(True):
@@ -7,19 +11,19 @@ def menu():
         opcion = int(input("Su opcion: "))
         
         if opcion == 1:
-            print("Ingreso Primer Operando")
+            a = ingresar_operando()
         elif opcion == 2:
-            print("Ingreso Segundo Operando")
+            b = ingresar_operando()
         elif opcion == 3:
-            print("Calculo todas las operaciones")
+            resultado = calcular_operaciones(a,b)
+            print("\nSe realizaron los calculos.")
         elif opcion == 4:
-            print("Informo todos los resultados")
+            mostrar_resultados(resultado)
         elif opcion == 5:
-            print("Saliendo...")
+            print("Saliendo.")
             break
         else:
             print("Opcion invalida ingrese números entre 1-5")
-        input("Pulse boton para continuar...")
-        os.system('clear')
 
+        input("Pulse boton para continuar.\n")
 menu()
